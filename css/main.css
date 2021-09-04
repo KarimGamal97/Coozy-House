@@ -1,0 +1,288 @@
+/* Start Main Components */
+*{
+    box-sizing: border-box;
+    font-family: 'Underdog', cursive;
+}
+:root{
+    --main-color:#2E2624;
+    --sec-color:#615D5A;
+    --third-color:#FBFBFB;
+    --fourth-color:#E49440;
+    --btn-color:#EDD1AD;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.sec-color{
+    color:var(--sec-color);
+}
+.BTN{
+    background-color: var(--third-color);
+    width: 150px;
+    height: 50px;
+    border-radius: 36px;
+    font-size: 16px;
+    transition: .5s;
+    font-weight: 500;
+    border: 1px solid #EDD1AD;
+}
+.BTN:hover{
+    background-color: #FBD6BC;
+}
+/* End Main Components */
+
+/* Start Navbar */
+
+.navbar{
+    padding-top: 20px;
+}
+.navbar .navbar-brand{
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--fourth-color);
+    transition: .5s;
+}
+.navbar-light .navbar-toggler-icon{
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+.navbar .navbar-brand:hover{
+    color: var(--btn-color);
+}
+.navbar .navbar-brand p{
+    color: var(--btn-color);
+    font-size: 15px;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: var(--third-color);
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid #E49440;
+    color: var(--third-color);
+}
+/* End Navbar */
+
+/* Start Header */
+
+.All{
+    background-image: url(../imgs/PSD/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    height: 80vh;
+}
+.header .advice{
+    padding-top: 11%;
+}
+@media (max-width:768px) {
+    .header .advice{
+        padding-top: 18%;
+        text-align: center;
+        width: 100%;
+    }    
+}
+.header .advice h1{
+    color: var(--btn-color);;
+    font-size: 35px;
+}
+.header .advice p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--third-color);
+}
+.header .advice button{
+    width: 170px;
+    height: 50px;
+    border: 1px solid var(--fourth-color);
+    background-color: transparent;
+    color: var(--third-color);
+    border-radius: 36px;
+    transition: .5s;
+    font-size: 17px;
+}
+.header .advice button:hover{
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+}
+/* End Header */
+
+.about{
+    background-color: var(--third-color);
+    padding-top:8%;
+}
+@media (max-width:992px) {
+    .about{
+        text-align: center;
+    }
+}
+
+.about .about-words h1{
+    font-size: 45px;
+}
+.about .about-words span{
+    font-size: 40px;
+}
+.about .about-words p{
+    padding-top: 20px;
+    word-wrap: break-word;
+}
+
+/* End about */
+
+
+/* Start Slider */
+
+.slider{
+    background-color: #F6F6F6;
+    padding-top: 6%;
+}
+.slider .slider-word{
+    margin-bottom: 30px;
+}
+.slider .slider-word h1,h2{
+    font-size: 45px;
+}
+.slider .Card{
+    text-align: center;
+    background-color: #FAFAFA;
+    margin-bottom: 80px;
+    padding-bottom: 15px;
+    transition: .5s;
+}
+.slider .Card:hover{
+    box-shadow: 10px 10px 10px #CCC;
+}
+.slider .Card h1{
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+}
+.slider .bttn{
+    width: 220px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 36px;
+    background-color: #FBD6BC;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .5s;
+    margin-bottom: 50px;
+    border: 1px solid #EDD1AD;
+}
+.slider .bttn:hover{
+    background-color: var(--third-color);
+}
+
+/* End Slider */
+
+/* Start Help */
+
+.help{
+    padding-top: 8%;
+    background-color: var(--third-color);
+    padding-bottom: 50px;
+}
+.help .help-word{
+    font-size: 45px;
+}
+.help .help-img{
+    margin-top: 60px;
+    text-align: center;
+}
+.help .help-img img{
+    width: 200px;
+    height: 50px;
+}
+.help .help-img h4{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* End Help */
+
+
+/* Start Donate */
+
+.donate{
+    background-color: #F6F6F6;
+    padding-top: 8%;
+}
+@media (max-width:768px) {
+    .donate{
+        text-align: center;
+    }
+    
+}
+.donate .donate-img img{
+    width: 100%;
+    height: 100%;
+}
+.donate .donate-word h1{
+    font-size: 45px;
+}
+.donate .donate-word p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--sec-color);
+}
+.donate .donate-word .card-num{
+    background-color: var(--btn-color);
+    padding: 12px;
+    border-radius: 10px;
+}
+.donate .donate-word .card-num img{
+    width: 25px;
+    margin-right: 5px;
+}
+.donate .donate-word .last-p{
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 1.7;
+}
+
+/* End Donate */
+
+/* Start Contact */
+
+.contact{
+    background-image: url(../imgs/PSD/Background_footer1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.contact .suggest h1,
+.contact .wait h1{
+    font-size: 25px;
+    color: var(--third-color);
+}
+.contact .suggest .email img,
+.contact .suggest .phone img,
+.contact .wait .locat img,
+.contact .wait .sec-locat img{
+    width: 30px;
+}
+
+.contact .suggest .email{
+    margin-bottom: 10px;
+}
+.contact .wait .locat{
+    margin-bottom: 10px;
+}
+.contact .suggest .email h2,
+.contact .suggest .phone h2,
+.contact .wait .locat h2,
+.contact .wait .sec-locat h2{
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 10px;
+    color: var(--third-color);
+}
+
+/* End Contact */
